@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import { useUserContext } from './context/userContext';
 import Auth from "./components/auth";
 import Dashboard from "./components/dashboard";

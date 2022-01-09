@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Card, Image } from 'semantic-ui-react';
+import "../index.css";
 
 // TODO: Switch to https://github.com/palmerhq/the-platform#stylesheet when it will be stable
 const styleLink = document.createElement("link");
@@ -9,14 +10,14 @@ document.head.appendChild(styleLink);
 
 const userInfo = (props) => {
   return (
-  <Card >
+    <Card >
     <Card.Content>
       <Image
         floated='right'
         size='mini'
         src='https://react.semantic-ui.com/images/avatar/large/steve.jpg'
       />
-      <Card.Header className='userName'> {props.userName} 's todo list </Card.Header>
+      <Card.Header className='userName'> {props.userName} <i>'s todo list</i>  </Card.Header>
     </Card.Content>
     <Card.Content extra>
       
@@ -25,8 +26,7 @@ const userInfo = (props) => {
         </Button>
       
     </Card.Content>
-  </Card>
-
+    </Card>
 );
 };
 
